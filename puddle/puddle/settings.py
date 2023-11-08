@@ -9,11 +9,11 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import dj_database_url
 from pathlib import Path
-import pymysql
+#import pymysql
 
-pymysql.install_as_MySQLdb()
+#pymysql.install_as_MySQLdb()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -94,6 +94,10 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+
+DATABASES["default"] = dj_database_url.parse("postgres://testdb_hl4v_user:0ZNEyggdjHMi8ebYNvQNft6D1LKz54WA@dpg-cl35o2ot3kic73d7j7b0-a.oregon-postgres.render.com/testdb_hl4v")  
+
+#postgres://testdb_hl4v_user:0ZNEyggdjHMi8ebYNvQNft6D1LKz54WA@dpg-cl35o2ot3kic73d7j7b0-a.oregon-postgres.render.com/testdb_hl4v
 
 
 # Password validation
