@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-mij^kgqr^(zr=m-mn@-^7xzml8n(i3!*y84%o+iwukb6t)yj@4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dgangorender.onrender.com']
+ALLOWED_HOSTS = ['dgangorender.onrender.com','127.0.0.1' ]
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
@@ -93,7 +93,7 @@ DATABASES = {
        'PASSWORD': '070894', 
         'HOST': 'localhost', #localhost
         'PORT': '3306',
-    }
+   }
 }
 
 DATABASES["default"] = dj_database_url.parse("postgres://testdb_hl4v_user:0ZNEyggdjHMi8ebYNvQNft6D1LKz54WA@dpg-cl35o2ot3kic73d7j7b0-a.oregon-postgres.render.com/testdb_hl4v")  
