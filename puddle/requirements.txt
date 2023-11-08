@@ -1,7 +1,0 @@
-dj_database_url
-Django
-gunicorn  
- 
- 
-
-
